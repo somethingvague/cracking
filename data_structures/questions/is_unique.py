@@ -4,8 +4,16 @@ Implement an algorithm to determine if a string has all unique characters
 
 
 def brute_force(string):
-    """Checks if a string has unique characters by iterating every pair of characters in the string
-    and checking for equality, O(N^2) run time"""
+    """Checks if a string has unique characters.
+
+    Brute force implementation which iterates and compares every pair of characters in the string, O(N^2) run time.
+
+    Args:
+        string (str): string to check for unique characters
+
+    Returns:
+        True if the characters in 'string' are unique, False otherwise
+    """
 
     for i in range(len(string)):
         for j in range(len(string)):
@@ -18,8 +26,17 @@ def brute_force(string):
 
 
 def sort_first(string):
-    """Checks if a string has unique characters by first sorting the string first and comparing adjacent
-    characters. The underlying Timsort implementation gives O(N LogN) run time"""
+    """Checks if a string has unique characters.
+
+    First sorts the string and compares adjacent characters. The underlying Timsort implementation gives O(N LogN)
+    run time
+
+    Args:
+        string (str): string to check for unique characters
+
+    Returns:
+        True if the characters in 'string' are unique, False otherwise
+    """
 
     sorted_string = ''.join(sorted(string))
     for i in range(len(sorted_string) - 1):
@@ -30,8 +47,16 @@ def sort_first(string):
 
 
 def using_hash(string):
-    """Checks if a string has unique characters by populating a hash of the letters. Runs in O(N) but requires an
-    additional data structure"""
+    """Checks if a string has unique characters.
+
+    Populates a dictionary of the letters. Runs in O(N) but requires the additional data structure.
+
+    Args:
+        string (str): string to check for unique characters
+
+    Returns:
+        True if the characters in 'string' are unique, False otherwise
+    """
 
     letter_dict = {}
     for letter in string:

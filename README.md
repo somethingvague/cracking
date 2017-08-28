@@ -1,4 +1,3 @@
 # cracking
-Repository of solutions to Cracking The Coding Interview
-
-To sharpen my problem solving and Python skills 
+A repository of solutions to the exercises in 'Cracking the Coding Interview 6th Edition'
+to sharpen my CS skills and learn Python
