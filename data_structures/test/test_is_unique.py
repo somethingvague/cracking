@@ -18,27 +18,29 @@ class TestIsUnique(unittest.TestCase):
         cls.common_string = ''.join(common_string)
 
     def test_brute_force(self):
-        """tests the ``brute_force()`` method of the is_unique module"""
+        """Tests the ``brute_force()`` method of the is_unique module"""
 
         self.assertTrue(brute_force(self.empty_string))
         self.assertTrue(brute_force(self.unique_string))
         self.assertFalse(brute_force(self.common_string))
 
     def test_sort_first(self):
-        """tests the ``sort_first()`` method of the is_unique module"""
+        """Tests the ``sort_first()`` method of the is_unique module"""
 
         self.assertTrue(sort_first(self.empty_string))
         self.assertTrue(sort_first(self.unique_string))
         self.assertFalse(sort_first(self.common_string))
 
     def test_using_hash(self):
-        """tests the ``using_hash()`` method of the is_unique module"""
+        """Tests the ``using_hash()`` method of the is_unique module"""
 
         self.assertTrue(using_hash(self.empty_string))
         self.assertTrue(using_hash(self.unique_string))
         self.assertFalse(using_hash(self.common_string))
 
     def test_execution_times(self):
+        """Times the execution of each implementation in the module for a range of use cases"""
+
         self._time("Brute Force unique string", brute_force, self.unique_string)
         self._time("Sort First unique string", sort_first, self.unique_string)
         self._time("Using Hash unique string", using_hash, self.unique_string)
@@ -54,6 +56,14 @@ class TestIsUnique(unittest.TestCase):
 
     @staticmethod
     def _time(desc, solution, arg):
+        """Times the execution of a given is_unique implementation
+
+        Args:
+            desc: short description of implemntation of use case.
+            solution: solution function.
+            arg: string representing a use case
+        """
+
         start = time.perf_counter()
         solution(arg)
         end = time.perf_counter()
