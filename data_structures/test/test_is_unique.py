@@ -1,9 +1,9 @@
 import random
 import string
-import time
 import unittest
 
-from data_structures.questions.is_unique import *
+from data_structures.questions.is_unique import brute_force, sort_first, using_hash
+from data_structures.test.utility import random_ascii_string, profile
 
 
 class TestIsUnique(unittest.TestCase):
@@ -41,34 +41,18 @@ class TestIsUnique(unittest.TestCase):
     def test_execution_times(self):
         """Times the execution of each implementation in the module for a range of use cases"""
 
-        self._time("Brute Force unique string", brute_force, self.unique_string)
-        self._time("Sort First unique string", sort_first, self.unique_string)
-        self._time("Using Hash unique string", using_hash, self.unique_string)
+        profile("Brute Force unique string", brute_force, self.unique_string)
+        profile("Sort First unique string", sort_first, self.unique_string)
+        profile("Using Hash unique string", using_hash, self.unique_string)
         print()
-        self._time("Brute Force common string", brute_force, self.common_string)
-        self._time("Sort First common string", sort_first, self.common_string)
-        self._time("Using Hash common string", using_hash, self.common_string)
+        profile("Brute Force common string", brute_force, self.common_string)
+        profile("Sort First common string", sort_first, self.common_string)
+        profile("Using Hash common string", using_hash, self.common_string)
         print()
-        long_string = ''.join(random.choice(self.unique_string) for _ in range(1000))
-        self._time("Brute Force long string", brute_force, long_string)
-        self._time("Sort First long string", sort_first, long_string)
-        self._time("Using Hash long string", using_hash, long_string)
-
-    @staticmethod
-    def _time(desc, solution, arg):
-        """Times the execution of a given is_unique implementation
-
-        Args:
-            desc: short description of implemntation of use case.
-            solution: solution function.
-            arg: string representing a use case
-        """
-
-        start = time.perf_counter()
-        solution(arg)
-        end = time.perf_counter()
-        print("{:s} execution time: {:1.8f}".format(desc, end - start))
-
+        long_string = random_ascii_string(10000)
+        profile("Brute Force long string", brute_force, long_string)
+        profile("Sort First long string", sort_first, long_string)
+        profile("Using Hash long string", using_hash, long_string)
 
 if __name__ == "__main__":
     unittest.main()

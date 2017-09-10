@@ -9,8 +9,7 @@ def brute_force(string):
     Brute force implementation which iterates and compares every pair of characters in the string, O(N^2) run time.
 
     Args:
-        string (str): string to check for unique characters
-
+        string: string to check for unique characters
     Returns:
         True if the characters in 'string' are unique, False otherwise
     """
@@ -32,8 +31,7 @@ def sort_first(string):
     run time
 
     Args:
-        string (str): string to check for unique characters
-
+        string: string to check for unique characters
     Returns:
         True if the characters in 'string' are unique, False otherwise
     """
@@ -52,8 +50,7 @@ def using_hash(string):
     Populates a dictionary of the letters. Runs in O(N) but requires the additional data structure.
 
     Args:
-        string (str): string to check for unique characters
-
+        string: string to check for unique characters
     Returns:
         True if the characters in 'string' are unique, False otherwise
     """
