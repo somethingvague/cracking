@@ -6,7 +6,8 @@ import time
 
 
 def random_ascii_string(length=104):
-    """Generates a random ascii string
+    """
+    Generates a random ascii string
 
     Args:
           length: length of string to be generated
@@ -19,7 +20,8 @@ def random_ascii_string(length=104):
 
 
 def profile(description, solution, *args):
-    """Times the execution of a given is_unique implementation
+    """
+    Times the execution of a given is_unique implementation
 
     Args:
         description: short description of implementation of use case.

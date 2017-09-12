@@ -1,12 +1,13 @@
-"""Question 1.2
+"""
+Question 1.2
 Given two strings, write a method to decide if one is a permutation of the other
 """
 
 
 def sort_first(first, second):
-    """Checks if the second string is a permutation of the first
-
-    Sort first implementation which sorts both string and checks equality
+    """
+    Checks if the second string is a permutation of the first using a "sort first" implementation which sorts
+    both strings then checks equality
 
     Args:
         first: some string
@@ -21,11 +22,10 @@ def sort_first(first, second):
 
 
 def use_hash(first, second):
-    """Checks if the second string is a permutation of the first
-
-    use_hash implementation populates a hash table of character->count of the first string, then iterates the
-    second string decremented the count of the corresponding character in the hash table. Once complete the values
-    of the hash should be all 0
+    """
+    Checks if the second string is a permutation of the first by populating a hash table of character -> count of the
+    first string, then iterating over the second string and decrementing the count of the corresponding character
+    in the hash table. Once complete the values of the hash should be all 0
 
     Args:
         first: some string

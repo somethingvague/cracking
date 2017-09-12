@@ -1,10 +1,12 @@
-"""Question 1.3
+"""
+Question 1.3
 Write a method to replace all spaces in a string with '%20'
 """
 
 
 def custom_urlify(string_list, true_length):
-    """Strips and replaces spaces with '%20' with custom implementation.
+    """
+    Strips and replaces spaces with '%20' with custom implementation.
 
     Args:
         string_list: list with characters to transform
@@ -27,7 +29,8 @@ def custom_urlify(string_list, true_length):
 
 
 def idiomatic_urlify(string_list):
-    """Strips and replaces spaces with '%20' idiomatically.
+    """
+    Strips and replaces spaces with '%20' idiomatically.
 
     Args:
         string_list: list of characters to transform
