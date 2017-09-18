@@ -2,7 +2,7 @@ import random
 import string
 import unittest
 
-from data_structures.questions.is_unique import brute_force, sort_first, using_hash
+from data_structures.questions.unique import brute_force, sort_first, using_hash
 from data_structures.test.utility import random_ascii_string, profile
 
 

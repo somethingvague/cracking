@@ -1,7 +1,7 @@
 import random
 import unittest
 from data_structures.test.utility import random_ascii_string, profile
-from data_structures.questions.is_permutation import sort_first, use_hash
+from data_structures.questions.permutation import sort_first, use_hash
 
 
 class TestIsPermutation(unittest.TestCase):
