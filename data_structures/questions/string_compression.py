@@ -22,14 +22,15 @@ def compress_string(string):
         if letter == current:
             count += 1
         else:
-            compressed.extend([current, str(count)])
+            compressed.append("{}{}".format(current, count))
             current = letter
             count = 1
 
     # Flush the remaining
-    compressed.extend([current, str(count)])
+    compressed.append("{}{}".format(current, count))
+    compressed_string = ''.join(compressed)
 
-    if len(compressed) >= len(string):
+    if len(compressed_string) >= len(string):
         return string
 
-    return ''.join(compressed)
+    return compressed_string
