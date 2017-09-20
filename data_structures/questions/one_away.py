@@ -25,7 +25,7 @@ def is_one_away(first, second):
 
     i = j = differences = 0
 
-    while i < len(first) and i < len(second):
+    while i < len(first) and j < len(second):
         if first[i] != second[j]:
             differences += 1
             if differences > 1:

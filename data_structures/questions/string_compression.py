@@ -6,7 +6,7 @@ Implement a method to perform basic string compression using counts of repeated 
 
 def compress_string(string):
     """
-    Compresses string using basic compression in O(N) space and time
+    Compresses string using basic compression in O(N) space and time.
 
     Args:
         string - to compress
@@ -16,20 +16,19 @@ def compress_string(string):
 
     count = 0
     compressed = []
-    current = string[0]
 
-    for letter in string:
-        if letter == current:
-            count += 1
-        else:
-            compressed.append("{}{}".format(current, count))
-            current = letter
-            count = 1
+    for i, letter in enumerate(string):
+        count += 1
 
-    # Flush the remaining
-    compressed.append("{}{}".format(current, count))
+        # Append character and count if next character is the end of the string
+        # or if the next character is different to the current
+        if i + 1 == len(string) or letter != string[i + 1]:
+            compressed.append("{}{}".format(letter, count))
+            count = 0
+
     compressed_string = ''.join(compressed)
 
+    # Trade-off between compressing entire string first or checking size on each append in the loop
     if len(compressed_string) >= len(string):
         return string
 
