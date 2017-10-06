@@ -11,8 +11,6 @@ def rotate_matrix(matrix):
 
     Args:
         matrix: NxN matrix
-    Returns:
-        Rotated matrix
     """
 
     # We only need to iterate half the number of layers the matrix has, doing so rotates the rest implicitly
