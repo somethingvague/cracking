@@ -15,8 +15,8 @@ def rotate_matrix(matrix):
         Rotated matrix
     """
 
-    # We only need to iterate half the number of layers the matrix has, doing so rotates the opposite layers
-    for layer_idx in range(floor(len(matrix) / 2)):
+    # We only need to iterate half the number of layers the matrix has, doing so rotates the rest implicitly
+    for layer_idx in range(int(floor(len(matrix) / 2))):
         layer_length = len(matrix) - layer_idx
         for element_idx in range(layer_idx, layer_length - 1):
             # Save top value
