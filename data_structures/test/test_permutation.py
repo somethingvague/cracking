@@ -23,7 +23,7 @@ class TestIsPermutation(unittest.TestCase):
         self.assertFalse(use_hash(self.string, self.non_permutation))
 
     def test_execution_times(self):
-        """Times the execution of each implementation in the module for a range of use cases"""
+        """Times thae execution of each implementation in the module for a range of use cases"""
 
         profile("Sort First permutation", sort_first, self.string, self.permutation)
         profile("Sort First non permutation", sort_first, self.string, self.non_permutation)
