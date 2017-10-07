@@ -1,5 +1,6 @@
 import unittest
-from data_structures.questions.one_away import is_one_away
+
+from data_structures.chapter_1.questions.one_away import is_one_away
 
 
 class TestOneAway(unittest.TestCase):

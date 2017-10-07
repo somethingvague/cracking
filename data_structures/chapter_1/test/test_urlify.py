@@ -1,6 +1,7 @@
 import unittest
-from data_structures.questions.urlify import custom_urlify, idiomatic_urlify
-from data_structures.test.utility import profile
+
+from data_structures.chapter_1.questions.urlify import custom_urlify, idiomatic_urlify
+from data_structures.chapter_1.test.utility import profile
 
 
 class TestURLify(unittest.TestCase):
