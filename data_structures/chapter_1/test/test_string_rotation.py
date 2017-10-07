@@ -1,5 +1,6 @@
 import unittest
-from data_structures.questions.string_rotation import is_string_rotation
+
+from data_structures.chapter_1.questions.string_rotation import is_string_rotation
 
 
 class TestStringRotation(unittest.TestCase):
