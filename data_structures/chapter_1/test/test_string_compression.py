@@ -1,5 +1,4 @@
 import unittest
-
 from data_structures.chapter_1.questions.string_compression import compress_string
 
 
