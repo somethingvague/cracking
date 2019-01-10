@@ -1,7 +1,4 @@
-"""
-Contains custom linked list implementation for use in chapter_2 questions.
-"""
-
+"""Contains custom linked list implementation for use in chapter_2 questions"""
 
 class Node:
     """Singly-linked node which has data and a reference to the next node."""
@@ -9,7 +6,8 @@ class Node:
     def __init__(self, data):
         """Initialises a node.
 
-        :param data: the data encapsulated in the node
+            Args:
+                 data: the data encapsulated in the node
         """
         self.data = data
         self.next = None
@@ -34,7 +32,8 @@ class LinkedList:
     def append_to_tail(self, data):
         """Adds a node to the end of the linked list.
 
-        :param data: data to be appended as a new node to the list.
+            Args:
+                 data: data to be appended as a new node to the list.
         """
         node = self.head
 

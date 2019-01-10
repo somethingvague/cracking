@@ -1,13 +1,11 @@
-"""
-Question 1.7
+"""Question 1.7
 Rotate an image represented by an NxN matrix
 """
 from math import floor
 
 
 def rotate_matrix(matrix):
-    """
-    Rotates an NxN matrix 90 degrees clockwise in place in O(N^2)
+    """Rotates an NxN matrix 90 degrees clockwise in place in O(N^2)
 
     Args:
         matrix: NxN matrix

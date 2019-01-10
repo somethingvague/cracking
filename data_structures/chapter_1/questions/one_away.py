@@ -1,12 +1,11 @@
-"""
-Question 1.5
+"""Question 1.5
 There are 3 types of edits that can be performed on strings: insert a character, remove a character, replace a
 character. Given two strings, write a function to check if they are one, or zero edits away
 """
 
+
 def is_one_away(first, second):
-    """
-    Determines if two strings are one insertion, removal or replacement away from each other in O(N)
+    """Determines if two strings are one insertion, removal or replacement away from each other in O(N)
 
     Args:
         first: string
@@ -15,11 +14,11 @@ def is_one_away(first, second):
         True if the second is "one away" from the first, False otherwise
     """
 
-    if abs(len(first)- len(second)) > 1:
+    if abs(len(first) - len(second)) > 1:
         return False
 
-    # 'Insertion' is the inverse of 'removal'. For these use cases, ensure 'first' is the smaller of the two
-    #  strings so we only need to handle 'insertion'
+    # 'Insertion' is the inverse of 'removal'. For the insertion use case ensure 'first' is the smaller of the two
+    #  strings so that we only need to handle 'insertion'
     if len(first) > len(second):
         first, second = second, first
 

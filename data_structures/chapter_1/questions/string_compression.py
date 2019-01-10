@@ -1,12 +1,10 @@
-"""
-Question 1.6
+"""Question 1.6
 Implement a method to perform basic string compression using counts of repeated characters
 """
 
 
 def compress_string(string):
-    """
-    Compresses string using basic compression in O(N) space and time.
+    """Compresses string using basic compression in O(N) space and time.
 
     Args:
         string - to compress

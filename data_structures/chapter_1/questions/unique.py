@@ -1,12 +1,10 @@
-"""
-Question 1.1
+"""Question 1.1
 Implement an algorithm to determine if a string has all unique characters
 """
 
 
 def brute_force(string):
-    """
-    Checks if a string has unique characters with brute force implementation which iterates and compares every pair
+    """Checks if a string has unique characters with brute force implementation which iterates and compares every pair
     of characters in the string, O(N^2) run time.
 
     Args:
@@ -26,8 +24,7 @@ def brute_force(string):
 
 
 def sort_first(string):
-    """
-    Checks if a string has unique characters by first sorting the string and compares adjacent characters. The
+    """Checks if a string has unique characters by first sorting the string and compares adjacent characters. The
     underlying Timsort implementation gives O(N LogN) run time.
 
     Args:
@@ -45,8 +42,7 @@ def sort_first(string):
 
 
 def using_hash(string):
-    """
-    Checks if a string has unique characters by populating a dictionary of the letters. Runs in O(N) but requires
+    """Checks if a string has unique characters by populating a dictionary of the letters. Runs in O(N) but requires
     the additional data structure.
 
     Args:

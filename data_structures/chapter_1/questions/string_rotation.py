@@ -1,13 +1,11 @@
-"""
-Question 1.9
+"""Question 1.9
 Given an is_substring function, write a function which determines if a string is a rotation of another string
 by only calling is_substring once
 """
 
 
 def is_string_rotation(s1, s2):
-    """
-    Determines if a string is a rotation of another, O(N)
+    """Determines if a string is a rotation of another, O(N)
 
     Args:
           s1: the string

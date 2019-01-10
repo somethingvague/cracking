@@ -1,13 +1,11 @@
-"""
-Question 1.8
+"""Question 1.8
 Given an NxM matrix, write a function which sets all values in the rows and columns to 0 where
 there is a 0 in that column
 """
 
 
 def zero_matrix(matrix):
-    """
-    Sets all values in columns and rows to 0 in place where there is an existing 0 in O(N^2)
+    """Sets all values in columns and rows to 0 in place where there is an existing 0 in O(N^2)
 
     Args:
         matrix: NxM matrix

@@ -1,11 +1,9 @@
-"""
-Question 1.4
+"""Question 1.4
 Given a string, check if it is a permutation of a palindrome
 """
 
 def is_palindrome_permutation(string):
-    """
-    Checks if a string is a permutation of a palindrome by populating a map and counting the occurrences of letters.
+    """Checks if a string is a permutation of a palindrome by populating a map and counting the occurrences of letters.
     O(N)
 
     Args:
