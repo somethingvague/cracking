@@ -49,8 +49,10 @@ class LinkedList:
     def delete_node(self, data):
         """Removes the first node containing data.
 
-        :param data: data to be removed from the list
-        :raises ValueError if the data is not in the list.
+        Args:
+            data: data to be removed from the list
+        Raises:
+            ValueError if the data is not in the list.
         """
         node = self.head
 
