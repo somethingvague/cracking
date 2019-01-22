@@ -33,11 +33,11 @@ class TestNode(unittest.TestCase):
         head.append_to_tail(data_to_remove)
         head.append_to_tail(tail_data)
 
-        newHead = head.delete_node(head, data_to_remove)
+        new_head = head.delete_node(head, data_to_remove)
 
-        self.assertEqual(newHead.data, head_data)
-        self.assertEqual(newHead.next.data, tail_data)
-        self.assertIsNone(newHead.next.next)
+        self.assertEqual(new_head.data, head_data)
+        self.assertEqual(new_head.next.data, tail_data)
+        self.assertIsNone(new_head.next.next)
 
 
 if __name__ == "main":
