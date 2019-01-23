@@ -21,7 +21,7 @@ def sort_first(first, second):
 
 def use_hash(first, second):
     """Checks if the second string is a permutation of the first by populating a hash table of character -> count of
-    thefirst string, then iterating over the second string and decrementing the count of the corresponding character
+    the first string, then iterating over the second string and decrementing the count of the corresponding character
     in the hash table. Once complete the values of the hash should be all 0
 
     Args:
