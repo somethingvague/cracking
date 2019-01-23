@@ -13,13 +13,6 @@ class Node:
         self.data = data
         self.next = None
 
-    def __eq__(self, other):
-        """Override default equals to compare value equality."""
-        if isinstance(other, self.__class__):
-            return other.__dict__ == self.__dict__
-
-        return False
-
     def append_to_tail(self, data):
         """Adds a node to the end of the linked list.
 
@@ -33,7 +26,7 @@ class Node:
 
         node.next = Node(data)
 
-    def delete_node(self, head, data):
+    def delete_node(self, data):
         """Removes the first node containing data.
 
         Args:
@@ -41,7 +34,7 @@ class Node:
         Raises:
             ValueError if the data is not in the list.
         """
-        node = head
+        node = self
 
         if node.data == data:
             return node.next
