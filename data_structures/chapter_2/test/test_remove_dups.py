@@ -2,6 +2,7 @@ import unittest
 
 from data_structures.chapter_2.linked_list import Node
 from data_structures.chapter_2.questions.remove_dups import *
+from utils.utils import random_integers, profile
 
 
 def create_linked_list(data):
@@ -39,6 +40,11 @@ class TestRemoveDups(unittest.TestCase):
         self.remove_dups(using_pointers)
         self.remove_dups_with_single_element(using_pointers)
 
+    def test_execution_times(self):
+        integers = random_integers()
+        head = create_linked_list(integers)
+        profile("Remove dups using set", using_set, head)
+        profile("Remove dups using pointers", using_pointers, head)
 
 if __name__ == "__main__":
     unittest.main()
