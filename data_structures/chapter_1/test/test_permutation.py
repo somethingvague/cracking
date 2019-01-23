@@ -9,8 +9,9 @@ class TestIsPermutation(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.string = random_ascii_string()
-        cls.permutation = cls.string
-        random.shuffle(cls.permutation)
+        shuffled = cls.string.split()
+        random.shuffle(shuffled)
+        cls.permutation = ''.join(shuffled)
         cls.non_permutation = cls.string[:-1]
 
     def test_sort_first(self):
@@ -24,7 +25,7 @@ class TestIsPermutation(unittest.TestCase):
         self.assertFalse(use_hash(self.string, self.non_permutation))
 
     def test_execution_times(self):
-        """Times thae execution of each implementation in the module for a range of use cases"""
+        """Times the execution of each implementation in the module for a range of use cases"""
 
         profile("Sort First permutation", sort_first, self.string, self.permutation)
         profile("Sort First non permutation", sort_first, self.string, self.non_permutation)

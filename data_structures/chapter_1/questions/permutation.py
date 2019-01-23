@@ -14,9 +14,8 @@ def sort_first(first, second):
         True if the second string is a permutation of the first, False otherwise
     """
 
-    first.sort()
-    second.sort()
-    return first == second
+    sorted_string = lambda x: ''.join(sorted(x))
+    return sorted_string(first) == sorted_string(second)
 
 
 def use_hash(first, second):

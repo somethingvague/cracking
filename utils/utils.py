@@ -15,7 +15,21 @@ def random_ascii_string(length=104):
     """
 
     ascii_letters = list(string.ascii_letters)
-    return [random.choice(ascii_letters) for _ in range(length)]
+    random_letters = [random.choice(ascii_letters) for _ in range(length)]
+    return ''.join(random_letters)
+
+
+def random_integers(length=500):
+    """Generates a random list of integers of length
+
+    Args:
+        range: for each element
+        length: size of return value
+    Returns:
+        random list of integers of length
+    """
+
+    return [random.randint(1, 10) for i in range(0, length)]
 
 
 def profile(description, solution, *args):
@@ -26,7 +40,6 @@ def profile(description, solution, *args):
         solution: function to profile.
         *args: use case to be passed to the function
     """
-
     start = time.perf_counter()
     solution(*args)
     end = time.perf_counter()
