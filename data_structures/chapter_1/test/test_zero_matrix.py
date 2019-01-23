@@ -17,13 +17,13 @@ class TestZeroMatrix(unittest.TestCase):
         self.assertEqual(matrix, zeroed_matrix)
 
     def test_edge_cases(self):
-        matrix = []
+        matrix = [[]]
         zero_matrix(matrix)
-        self.assertEqual(matrix, [])
+        self.assertEqual(matrix, [[]])
 
         matrix = [[0, 0, 0]]
         zero_matrix(matrix)
-        self.assertEqual(matrix, [0, 0, 0])
+        self.assertEqual(matrix, [[0, 0, 0]])
 
 
 if __name__ == "__main__":
