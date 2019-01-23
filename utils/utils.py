@@ -4,6 +4,16 @@ import string
 import random
 import time
 
+from data_structures.chapter_2.linked_list import Node
+
+
+def create_linked_list(data):
+    head = Node(data[0])
+    for datum in data[1:]:
+        head.append_to_tail(datum)
+
+    return head
+
 
 def random_ascii_string(length=104):
     """Generates a random ascii string
@@ -23,13 +33,12 @@ def random_integers(length=500):
     """Generates a random list of integers of length
 
     Args:
-        range: for each element
         length: size of return value
     Returns:
         random list of integers of length
     """
 
-    return [random.randint(1, 10) for i in range(0, length)]
+    return [random.randint(1, 10) for _ in range(0, length)]
 
 
 def profile(description, solution, *args):

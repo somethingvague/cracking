@@ -1,16 +1,7 @@
 import unittest
 
-from data_structures.chapter_2.linked_list import Node
 from data_structures.chapter_2.questions.remove_dups import *
-from utils.utils import random_integers, profile
-
-
-def create_linked_list(data):
-    head = Node(data[0])
-    for datum in data[1:]:
-        head.append_to_tail(datum)
-
-    return head
+from utils.utils import random_integers, profile, create_linked_list
 
 
 class TestRemoveDups(unittest.TestCase):
