@@ -3,7 +3,7 @@ import string
 import unittest
 
 from data_structures.chapter_1.questions import brute_force, sort_first, using_hash
-from data_structures.chapter_1.test.utility import random_ascii_string, profile
+from utils.utils import random_ascii_string, profile
 
 
 class TestIsUnique(unittest.TestCase):
