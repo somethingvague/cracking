@@ -1,4 +1,6 @@
-"""Write code to remove duplicates from an unsorted linked list"""
+"""Question 2.1
+Write code to remove duplicates from an unsorted linked list
+"""
 
 
 def using_set(node):
