@@ -48,6 +48,11 @@ class Node:
 
         raise ValueError("{} not found".format(data))
 
+    def __eq__(self, o: object) -> bool:
+        if isinstance(o, Node):
+            return self.data == o.data
+        return False
+
 
 class LinkedList:
     """Implementation of a singly-linked list with a head node."""
