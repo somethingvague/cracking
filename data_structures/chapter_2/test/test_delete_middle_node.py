@@ -8,8 +8,10 @@ class TestKthToLast(unittest.TestCase):
     def test_delete_middle_node(self):
         head = create_linked_list([1, 2, 3, 4, 5])
 
-        delete_middle_node(head.next.next)
+        self.assertTrue(delete_middle_node(head.next.next))
         self.assertEqual(head, create_linked_list([1, 2, 4, 5]))
 
-        delete_middle_node(head.next)
+        self.assertTrue(delete_middle_node(head.next))
         self.assertEqual(head, create_linked_list([1, 4, 5]))
+
+        self.assertFalse(delete_middle_node(head.next.next))
