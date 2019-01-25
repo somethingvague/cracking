@@ -53,6 +53,9 @@ class Node:
             return self.data == o.data
         return False
 
+    def __str__(self) -> str:
+        return str(self.data)
+
 
 class LinkedList:
     """Implementation of a singly-linked list with a head node."""
