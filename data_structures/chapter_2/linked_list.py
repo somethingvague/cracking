@@ -53,6 +53,9 @@ class Node:
             return self.data == o.data
         return False
 
+    def __hash__(self) -> int:
+        return super().__hash__()
+
     def __str__(self) -> str:
         return str(self.data)
 
