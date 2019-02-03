@@ -31,6 +31,7 @@ def intersection_using_set(first, second):
 
 def _get_tail_and_size(node):
     """Returns the tail node and size of a linked list
+
     Args:
         node
     Returns:

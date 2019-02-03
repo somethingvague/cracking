@@ -7,11 +7,11 @@ Find the kth to last element in a singly linked list
 def kth_to_last(head, k):
     """Finds the kth to last node in a linked list
 
-        Args:
-            head: node in the linked list
-            k: index from last to return
-        Returns:
-            Node kth to last node
+    Args:
+        head: node in the linked list
+        k: index from last to return
+    Returns:
+        Node kth to last node
     """
     runner = head
     node = head

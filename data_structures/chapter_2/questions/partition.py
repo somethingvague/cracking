@@ -6,10 +6,11 @@ Partition a linked list around a value x such that all the nodes less than x com
 def partition(node, partition_value):
     """Partitions a linked list on a value by moving elements to elements to the head or tail
 
-        Args:
-            node: head of linked list
-            partition_value: value on which to partition the linked list
-        Returns the partitioned linked list
+    Args:
+        node: head of linked list
+        partition_value: value on which to partition the linked list
+    Returns:
+        the partitioned linked list
     """
     head = node
     tail = node

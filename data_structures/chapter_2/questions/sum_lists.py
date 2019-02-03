@@ -23,4 +23,14 @@ def _sum_lists(first, second, carry):
 
 
 def sum_lists(first, second):
+    """Sums 2 linked lists where each node represents a decimal digit
+
+    Implementation recurses the lists, passes carry over into the next stack frame
+
+    Args:
+        first: list to sum
+        second: list to sum
+    Returns:
+        a linked list representing the the sum of the elements
+    """
     return _sum_lists(first, second, 0)

@@ -6,10 +6,10 @@ Write code to remove duplicates from an unsorted linked list
 def using_set(node):
     """Removes duplicate nodes by building a set of values and re-pointing the next_node pointers. O(N) space and time
 
-        Args:
-            node: input Node
-        Returns:
-            node: with duplicates removed
+    Args:
+        node: input Node
+    Returns:
+        node: with duplicates removed
     """
 
     all_data = set()
@@ -29,10 +29,10 @@ def using_set(node):
 def using_pointers(node):
     """Removes duplicate nodes by using 2 pointers including a runner which re-assigns nodes. O(N^2) time
 
-        Args:
-            node: input Node
-        Returns:
-            node: with duplicates removed
+    Args:
+        node: input Node
+    Returns:
+        node: with duplicates removed
     """
 
     while node is not None:

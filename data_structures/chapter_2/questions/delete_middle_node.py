@@ -3,6 +3,13 @@ Delete a node in the middle of a singly linked list, given only access to that n
 
 
 def delete_middle_node(node):
+    """Removes the a node from a linked list
+
+    Args:
+        node: the node to remove
+    Returns:
+        boolean representing success
+    """
     if node is None or node.next is None:
         return False
 
