@@ -1,9 +1,11 @@
-from distutils.core import setup
+from setuptools import setup, find_packages
 
 setup(
     name='cracking',
     version='0.0.1dev',
-    packages=['data_structures', 'data_structures.questions', 'data_structures.test'],
+    packages=find_packages(),
+    test_suite='nose.collector',
+    tests_require=['nose'],
     url='https://github.com/somethingvague/cracking',
     license='',
     author='somethingvague',
