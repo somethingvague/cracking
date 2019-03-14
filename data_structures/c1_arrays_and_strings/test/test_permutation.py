@@ -1,7 +1,7 @@
 import random
 import unittest
 
-from data_structures.chapter_1.questions.permutation import sort_first, use_hash
+from data_structures.c1_arrays_and_strings.questions.permutation import sort_first, use_hash
 from utils.utils import random_ascii_string, profile
 
 

@@ -1,6 +1,6 @@
 import unittest
 
-from data_structures.chapter_2.questions.remove_dups import *
+from data_structures.c2_linked_lists.questions.remove_dups import *
 from utils.utils import random_integers, profile, create_linked_list
 
 

@@ -1,6 +1,6 @@
 import unittest
 
-from data_structures.chapter_2.questions.kth_to_last import kth_to_last
+from data_structures.c2_linked_lists.questions.kth_to_last import kth_to_last
 from utils.utils import create_linked_list
 
 

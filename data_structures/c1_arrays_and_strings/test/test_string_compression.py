@@ -1,5 +1,5 @@
 import unittest
-from data_structures.chapter_1.questions.string_compression import compress_string
+from data_structures.c1_arrays_and_strings.questions.string_compression import compress_string
 
 
 class TestStringCompression(unittest.TestCase):

@@ -1,6 +1,6 @@
 import unittest
 
-from data_structures.chapter_2.questions.sum_lists import sum_lists
+from data_structures.c2_linked_lists.questions.sum_lists import sum_lists
 from utils.utils import create_linked_list
 
 

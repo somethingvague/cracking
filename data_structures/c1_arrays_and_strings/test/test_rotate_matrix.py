@@ -1,6 +1,6 @@
 import unittest
 
-from data_structures.chapter_1.questions.rotate_matrix import rotate_matrix
+from data_structures.c1_arrays_and_strings.questions.rotate_matrix import rotate_matrix
 
 
 class TestRotateMatrix(unittest.TestCase):

@@ -1,6 +1,6 @@
 import unittest
 
-from data_structures.chapter_2.questions.palindrome import is_palindrome_with_list, is_palindrome_with_stack
+from data_structures.c2_linked_lists.questions.palindrome import is_palindrome_with_list, is_palindrome_with_stack
 from utils.utils import create_linked_list
 
 

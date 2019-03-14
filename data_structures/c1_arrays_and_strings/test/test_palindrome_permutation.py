@@ -1,6 +1,6 @@
 import unittest
 
-from data_structures.chapter_1.questions.palindrome_permutation import is_palindrome_permutation
+from data_structures.c1_arrays_and_strings.questions.palindrome_permutation import is_palindrome_permutation
 
 
 class TestIsPalindromePermutation(unittest.TestCase):

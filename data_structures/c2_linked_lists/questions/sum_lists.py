@@ -2,7 +2,7 @@
 Write a function that sums 2 numbers represented by linked lists
 """
 
-from data_structures.chapter_2.linked_list import Node
+from data_structures.c2_linked_lists.linked_list import Node
 
 
 def _get_or_default(node):

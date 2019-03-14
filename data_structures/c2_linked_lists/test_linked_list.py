@@ -1,6 +1,6 @@
 import unittest
 
-from data_structures.chapter_2.linked_list import Node
+from data_structures.c2_linked_lists.linked_list import Node
 
 
 class TestNode(unittest.TestCase):

@@ -1,6 +1,6 @@
 import unittest
 
-from data_structures.chapter_2.questions.partition import partition
+from data_structures.c2_linked_lists.questions.partition import partition
 from utils.utils import create_linked_list
 
 

@@ -1,6 +1,6 @@
 import unittest
 
-from data_structures.chapter_2.questions.delete_middle_node import delete_middle_node
+from data_structures.c2_linked_lists.questions.delete_middle_node import delete_middle_node
 from utils.utils import create_linked_list
 
 

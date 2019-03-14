@@ -1,6 +1,6 @@
 import unittest
 
-from data_structures.chapter_1.questions.zero_matrix import zero_matrix
+from data_structures.c1_arrays_and_strings.questions.zero_matrix import zero_matrix
 
 
 class TestZeroMatrix(unittest.TestCase):

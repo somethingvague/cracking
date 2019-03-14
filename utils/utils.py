@@ -4,7 +4,7 @@ import string
 import random
 import time
 
-from data_structures.chapter_2.linked_list import Node
+from data_structures.c2_linked_lists.linked_list import Node
 
 
 def create_linked_list(data):

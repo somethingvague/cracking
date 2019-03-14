@@ -1,4 +1,4 @@
-"""Contains custom linked list implementation for use in chapter_2 questions"""
+"""Contains custom linked list implementation for use in c2_linked_lists questions"""
 
 
 class Node:

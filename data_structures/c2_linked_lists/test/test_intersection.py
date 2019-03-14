@@ -1,7 +1,7 @@
 import unittest
 
-from data_structures.chapter_2.linked_list import Node
-from data_structures.chapter_2.questions.intersection import intersection_using_set, iterative_intersection
+from data_structures.c2_linked_lists.linked_list import Node
+from data_structures.c2_linked_lists.questions.intersection import intersection_using_set, iterative_intersection
 from utils.utils import create_linked_list
 
 
