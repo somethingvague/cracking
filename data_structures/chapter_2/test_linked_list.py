@@ -23,7 +23,7 @@ class TestNode(unittest.TestCase):
     def test_delete_node_with_missing_data(self):
         with self.assertRaises(ValueError):
             head = Node("Some data")
-            head.delete_node(head, "Bob")
+            head.delete_node("Bob")
 
     def test_delete_node(self):
         head_data = "Some data"
@@ -33,7 +33,7 @@ class TestNode(unittest.TestCase):
         head.append_to_tail(data_to_remove)
         head.append_to_tail(tail_data)
 
-        new_head = head.delete_node(head, data_to_remove)
+        new_head = head.delete_node(data_to_remove)
 
         self.assertEqual(new_head.data, head_data)
         self.assertEqual(new_head.next.data, tail_data)
