@@ -22,11 +22,11 @@ class TestStack(unittest.TestCase):
         self.assertEqual(stack.peek(), second_data)
 
         popped = stack.pop()
-        self.assertEquals(popped, second_data)
-        self.assertEquals(stack.peek(), first_data)
+        self.assertEqual(popped, second_data)
+        self.assertEqual(stack.peek(), first_data)
 
         popped = stack.pop()
-        self.assertEquals(popped, first_data)
+        self.assertEqual(popped, first_data)
 
 
 if __name__ == "main":
