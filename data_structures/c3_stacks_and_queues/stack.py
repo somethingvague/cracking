@@ -1,10 +1,5 @@
 """Custom stack implementation"""
-
-
-class Node:
-    def __init__(self, data):
-        self.data = data
-        self.next = None
+from data_structures.c3_stacks_and_queues.node import Node
 
 
 class Stack:
@@ -17,7 +12,7 @@ class Stack:
         raises:
             IndexError if the stack is empty
         """
-        self._raiseIfEmpty()
+        self._raise_if_empty()
         item = self._top.data
         self._top = self._top.next
         return item
@@ -38,13 +33,13 @@ class Stack:
         raises:
             IndexError if the stack is empty
         """
-        self._raiseIfEmpty()
+        self._raise_if_empty()
         return self._top.data
 
-    def isEmpty(self):
+    def is_empty(self):
         """Returns true if there is no node on the top of the stack"""
         return self._top is None
 
-    def _raiseIfEmpty(self):
-        if self.isEmpty():
+    def _raise_if_empty(self):
+        if self.is_empty():
             raise IndexError('Stack is empty')

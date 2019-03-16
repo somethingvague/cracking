@@ -1,5 +1,4 @@
 import unittest
-
 from data_structures.c3_stacks_and_queues.stack import Stack
 
 

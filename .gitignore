@@ -102,4 +102,4 @@ ENV/
 
 *.iml
 .idea/*
-./vscode/*
+.vscode/*
