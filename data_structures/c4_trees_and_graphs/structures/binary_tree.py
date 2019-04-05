@@ -35,3 +35,4 @@ class TreeNode:
         self.data = data
         self.left = None
         self.right = None
+        self.parent = None  # attribute permitted in a few questions

@@ -21,26 +21,38 @@ class BinarySearchTree:
             data: data to be inserted in a Tree
 
         """
-        self._insert(data, self.root)
+        self._insert_node(TreeNode(data), self.root)
 
-    def _insert(self, data, node):
-        """Helper for 'insert' method
+    def insert_node(self, node):
+        """
+        Inserts the data and maintains the order property in the tree
 
         Args:
-            data: data to be inserted in the tree
-            node: a parent node which the data will be inserted under
+            node: node to be inserted in a Tree
 
         """
-        if data <= node.data:
-            if node.left is None:
-                node.left = TreeNode(data)
+        self._insert_node(node, self.root)
+
+    def _insert_node(self, node, from_node):
+        """Helper for 'insert_node' method
+
+        Args:
+            node: node to be inserted in the tree
+            from_node: a parent node which the data will be inserted under
+
+        """
+        if node.data <= from_node.data:
+            if from_node.left is None:
+                from_node.left = node
+                node.parent = from_node
             else:
-                self._insert(data, node.left)
+                self._insert_node(node, from_node.left)
         else:
-            if node.right is None:
-                node.right = TreeNode(data)
+            if from_node.right is None:
+                from_node.right = node
+                node.parent = from_node
             else:
-                self._insert(data, node.right)
+                self._insert_node(node, from_node.right)
 
     def search(self, data):
         """Searches for a key in the tree from the root
